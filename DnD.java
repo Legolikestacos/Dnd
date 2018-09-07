@@ -50,7 +50,7 @@ class DnD
             }while(!(dic.containsKey(name)));
         }else if(t.toLowerCase().equals("stop"))
         {
-            System.out.flush();
+            System.out.print('\u000C');
         }else if(t.toLowerCase().contains("create character"))
         {
             create(dic);
@@ -72,6 +72,7 @@ class DnD
         
         Character temp = new Character(name, clas, level, race);
         
+        //needs fixin
         if(race.equals("Half Elf"))
         {   
             System.out.print("Stat Bonus Number One: ");
